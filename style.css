@@ -1,0 +1,60 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f5e8ba;
+}
+h2{
+    text-align: center;
+    color: rgb(220, 60, 20);
+    font-size: 2em;
+}
+.game{
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    grid-row-gap: 2em;
+    margin: 40px auto;
+    align-items: center;
+    justify-content: center;
+}
+.game div{
+    height: 150px;
+    width: 100px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: brown;
+    font-size: 2em;
+}
+.cardback{
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image:  linear-gradient(135deg, #d01b1b 25%, transparent 25%), linear-gradient(225deg, #d01b1b 25%, transparent 25%), linear-gradient(45deg, #d01b1b 25%, transparent 25%), linear-gradient(315deg, #d01b1b 25%, #e5e5f7 25%);
+    background-position:  10px 0, 10px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
+}
+.won{
+    color: green;
+    font-size: 2em;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    gap: 20px;
+}
+.won button{
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: red;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
